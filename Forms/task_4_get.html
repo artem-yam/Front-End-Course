@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Главная</title>
+		<meta charset="utf-8"/>	 
+		<style>
+			.field {clear:both; text-align:right;}
+			label {float:left;}
+			.main {float:left}
+		</style> 
+	</head>
+	<body>
+	<h1>The Form</h1>
+	<form action="http://httpbin.org/get" method="get">
+		<fieldset>
+		<legend>Personal data</legend>
+		<div class="main">
+			<div class="field">
+				<label>First name </label>
+					<input type="text" name="firstname">
+				<br><br>
+			</div>
+			<div class="field">
+				<label>Middle name </label>
+					<input type="text" name="middlename">
+				<br><br>
+			</div>
+			<div class="field">
+				<label>Surname name</label>
+					<input type="text" name="surname">
+				<br>
+			</div>
+			
+			<table>
+				<tr>
+					<td rowspan="2" width="140" 
+					style="text-align:left">Sex</td>
+					<td>
+						<input type="radio" name="sex" value="male" checked>Male
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="sex" value="female">Female
+					</td>
+				</tr>	
+			</table>
+
+			<div class="field">
+				<label>Age </label>
+					<input type="number" name="age" min="18" max="101"
+					style="width:170px;">
+				<br><br>
+			</div>
+			<div class="field">
+				<label>Country of Residence</label>
+					<input list="countries">
+					<datalist id="countries">
+						<option value="Russia">
+						<option value="USA">
+						<option value="Germany">
+						<option value="Italy">
+						<option value="Spain">
+					</datalist>
+				<br><br>
+			</div>
+			<div class="field">
+				<label>City</label>
+					<input type="checkbox" name="ryazan" value="Ryazan">Ryazan
+					<input type="checkbox" name="moscow" value="Moscow">Moscow
+				<br><br>
+			</div>
+			
+			<div class="field">
+				<label>Photography</label>
+					<input type="file" name="img">
+				<br><br>
+			</div>
+		</div>
+		<div style="clear:both">		
+			<hr>
+		</div>
+		<div class="main">
+			<div class="field">
+				<label style="vertical-align:middle">Title</label>
+					<select name="title" multiple>
+						<optgroup label="Technologies">
+							<option>Web Master</option>
+							<option>Database Administrator</option>
+							<option>Computer-aided design</option>
+						</optgroup>
+						<optgroup label="Finance">
+							<option>Economic Planning</option>
+							<option>Management accounting</option>
+							<option>Budgeting and planning</option>
+						</optgroup>
+					</select>
+				<br><br>
+				<label>Salary</label>
+					<input type="range" name="salary" min="5000" max="200000" step="100">
+				<br><br>
+				<textarea name="message" rows="10" cols="50"
+				placeholder="Tell us about yourself..."></textarea>
+			</div>
+		</div>
+		</fieldset>
+		<fieldset>
+		<legend>Contact Information</legend>
+		<div class="main">	
+			<div class="field">
+				<label>Site</label>
+					<input type="url" name="site">
+				<br><br>
+			</div>
+			<div class="field">
+				<label>E-mail</label>
+					<input type="email" name="email">
+				<br><br>
+			</div>
+			<div class="field">
+				<label>Phone</label>
+					<input type="tel" name="phone">
+				<br><br>
+			</div>
+		</div>
+		</fieldset><br>
+		<div class="main">
+			<div class="field">
+				<label>Password</label>
+					<input type="password" name="password" required>
+				<br><br>
+			</div>
+		</div>
+		<div style="clear:both">
+			<hr>
+		</div>
+		<input type="submit" name="submit">
+		<input type="reset" name="reset">
+	</form>
+	</body>
+</html>
