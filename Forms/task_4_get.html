@@ -16,19 +16,19 @@
 		<legend>Personal data</legend>
 		<div class="main">
 			<div class="field">
-				<label>First name </label>
-					<input type="text" name="firstname">
-				<br><br>
+				<label for="firstname">First name </label>
+					<input id="firstname" type="text" name="firstname"/>
+				<br/><br/>
 			</div>
 			<div class="field">
-				<label>Middle name </label>
-					<input type="text" name="middlename">
-				<br><br>
+				<label for="middlename">Middle name </label>
+					<input id="middlename" type="text" name="middlename"/>
+				<br/><br/>
 			</div>
 			<div class="field">
-				<label>Surname name</label>
-					<input type="text" name="surname">
-				<br>
+				<label for="surname">Surname name</label>
+					<input id="surname" type="text" name="surname"/>
+				<br/>
 			</div>
 			
 			<table>
@@ -36,54 +36,54 @@
 					<td rowspan="2" width="140" 
 					style="text-align:left">Sex</td>
 					<td>
-						<input type="radio" name="sex" value="male" checked>Male
+						<input type="radio" id="male" name="sex" value="male" checked/><label for="male">Male</label>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input type="radio" name="sex" value="female">Female
+						<input type="radio" id="female" name="sex" value="female"/><label for="female">Female</label>
 					</td>
 				</tr>	
 			</table>
 
 			<div class="field">
-				<label>Age </label>
-					<input type="number" name="age" min="18" max="101"
-					style="width:170px;">
-				<br><br>
+				<label for="age">Age </label>
+					<input type="number" id="age" name="age" min="18" max="101"
+					style="width:170px;"/>
+				<br/><br/>
 			</div>
 			<div class="field">
 				<label>Country of Residence</label>
 					<input list="countries">
 					<datalist id="countries">
-						<option value="Russia">
-						<option value="USA">
-						<option value="Germany">
-						<option value="Italy">
-						<option value="Spain">
+						<option value="Russia"></option>
+						<option value="USA"></option>
+						<option value="Germany"></option>
+						<option value="Italy"></option>
+						<option value="Spain"></option>
 					</datalist>
-				<br><br>
+				<br/><br/>
 			</div>
 			<div class="field">
 				<label>City</label>
-					<input type="checkbox" name="ryazan" value="Ryazan">Ryazan
-					<input type="checkbox" name="moscow" value="Moscow">Moscow
-				<br><br>
+					<input type="checkbox" id="ryazan" name="ryazan" value="Ryazan"/>
+					<input type="checkbox" id="moscow" name="moscow" value="Moscow"/>
+				<br/><br/>
 			</div>
 			
 			<div class="field">
-				<label>Photography</label>
-					<input type="file" name="img">
-				<br><br>
+				<label for="img">Photography</label>
+					<input type="file" name="img" id="img"/>
+				<br/><br/>
 			</div>
 		</div>
 		<div style="clear:both">		
-			<hr>
+			<hr/>
 		</div>
 		<div class="main">
 			<div class="field">
-				<label style="vertical-align:middle">Title</label>
-					<select name="title" multiple>
+				<label style="vertical-align:middle" for="title">Title</label>
+					<select id="title" name="title" multiple>
 						<optgroup label="Technologies">
 							<option>Web Master</option>
 							<option>Database Administrator</option>
@@ -95,10 +95,10 @@
 							<option>Budgeting and planning</option>
 						</optgroup>
 					</select>
-				<br><br>
-				<label>Salary</label>
-					<input type="range" name="salary" min="5000" max="200000" step="100">
-				<br><br>
+				<br/><br/>
+				<label for="salary">Salary</label>
+					<input id="salary" type="range" name="salary" min="5000" max="200000" step="100"/>
+				<br/><br/>
 				<textarea name="message" rows="10" cols="50"
 				placeholder="Tell us about yourself..."></textarea>
 			</div>
@@ -108,34 +108,34 @@
 		<legend>Contact Information</legend>
 		<div class="main">	
 			<div class="field">
-				<label>Site</label>
-					<input type="url" name="site">
-				<br><br>
+				<label for="site">Site</label>
+					<input type="url" id="site" name="site"/>
+				<br/><br/>
 			</div>
 			<div class="field">
-				<label>E-mail</label>
-					<input type="email" name="email">
-				<br><br>
+				<label for="email">E-mail</label>
+					<input type="email" id="email" name="email"/>
+				<br/><br/>
 			</div>
 			<div class="field">
-				<label>Phone</label>
-					<input type="tel" name="phone">
-				<br><br>
+				<label for="phone">Phone</label>
+					<input type="tel" id="phone" name="phone"/>
+				<br/><br/>
 			</div>
 		</div>
-		</fieldset><br>
+		</fieldset><br/>
 		<div class="main">
 			<div class="field">
-				<label>Password</label>
-					<input type="password" name="password" required>
-				<br><br>
+				<label for="password">Password</label>
+					<input type="password" id="password" name="password" required/>
+				<br/><br/>
 			</div>
 		</div>
 		<div style="clear:both">
-			<hr>
+			<hr/>
 		</div>
-		<input type="submit" name="submit">
-		<input type="reset" name="reset">
+		<input type="submit" name="submit"/>
+		<input type="reset" name="reset"/>
 	</form>
 	</body>
 </html>

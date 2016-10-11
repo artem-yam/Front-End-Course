@@ -7,12 +7,12 @@
 	<body>
 	<h1>Task 1</h1>
 	<ul>
-		<li><a href="">Searching</a></li>
-		<li><a href="">YouTube</a></li>
-		<li><a href="">Card</a></li>
-		<li><a href="">Play</a></li>
-		<li><a href="">News</a></li>
-		<li><a href="">Mail</a></li>
+		<li><a href="#">Searching</a></li>
+		<li><a href="#">YouTube</a></li>
+		<li><a href="#">Card</a></li>
+		<li><a href="#">Play</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Mail</a></li>
 	</ul>
 	<ol start="7">
 		<li>Searching</li>
@@ -21,13 +21,13 @@
 		<li>News</li>
 		<li>Dictionaries</li>
 		<li>Pictures</li>
-		<li>Yet</li>
+		<li>Yet
 		<ul>
 			<li>Flights</li>
 			<li>Auto</li>
 			<li>Poster</li>
 			<li>Blogs</li>
-		</ul>
+		</ul></li>
 	</ol>
 	<dl>
 		<dt><i>Tag</i></dt>
@@ -38,7 +38,7 @@
 			for machine processing
 			</dd>
 	</dl>
-	<hr>
+	<hr/>
 	<p style='text-align:center;'>CSS Generated content for pseudo-elements</p>
 	<table border="1" width="100%">
 		<thead>
@@ -106,44 +106,44 @@
 			</td>
 		</tfoot>
 	</table>
-	<hr>
+	<hr/>
 	<form action="http://httpbin.org/post" method="post">
 		<fieldset>
 			<legend>Personal data</legend>
 			<label>Surname
-				<input type="text" name="surname">
-			</label><br><br>
+				<input type="text" name="surname"/>
+			</label><br/><br/>
 			<label>First name
-				<input type="text" name="firstname">
-			</label><br><br>
+				<input type="text" name="firstname"/>
+			</label><br/><br/>
 			<label>Middle name
-				<input type="text" name="middlename">
-			</label><br><br>
+				<input type="text" name="middlename"/>
+			</label><br/><br/>
 			<label>You are</label>
-				<input type="radio" name="sex" value="male" checked>male
-				<input type="radio" name="sex" value="female">female
-			<br><br>
+				<input type="radio" id="male" name="sex" value="male" checked/><label for="male">male</label>
+				<input type="radio" id="female" name="sex" value="female"/><label for="female">female</label>
+			<br/><br/>
 			<label>Age
-				<input type="number" name="age" min="18" max="101">
-			</label><br><br>
+				<input type="number" name="age" min="18" max="101"/>
+			</label><br/><br/>
 			<label>Country of Residence
-				<input list="countries">
+				<input list="countries"/>
 				<datalist id="countries">
-					<option value="Russia">
-					<option value="USA">
-					<option value="Germany">
-					<option value="Italy">
-					<option value="Spain">
+					<option value="Russia"></option>
+					<option value="USA"></option>
+					<option value="Germany"></option>
+					<option value="Italy"></option>
+					<option value="Spain"></option>
 				</datalist>
-			</label><br><br>
+			</label><br/><br/>
 			<label>City</label>
-				<input type="checkbox" name="ryazan" value="Ryazan">Ryazan
-				<input type="checkbox" name="moscow" value="Moscow">Moscow
-			<br><br>
+				<input type="checkbox" id="ryazan" name="ryazan" value="Ryazan"/><label for="ryazan">Ryazan</label>
+				<input type="checkbox" id="moscow" name="moscow" value="Moscow"/><label for="moscow">Moscow</label>
+			<br/><br/>
 			<label>Photography
-				<input type="file" name="img">
+				<input type="file" name="img"/>
 			</label><br><br>
-			<hr>
+			<hr/>
 			<label>Title
 				<select name="title" multiple>
 					<optgroup label="Technologies">
@@ -157,30 +157,30 @@
 						<option>Budgeting and planning</option>
 					</optgroup>
 				</select>
-			</label><br><br>
+			</label><br/><br/>
 			<label>Salary
-				<input type="range" name="salary" min="5000" max="200000" step="100">
-			</label><br><br>
+				<input type="range" name="salary" min="5000" max="200000" step="100"/>
+			</label><br/><br/>
 			<textarea name="message" rows="10" cols="50"
 			placeholder="Tell us about yourself..."></textarea>
 		</fieldset>
 		<fieldset>
 			<legend>Contact Information</legend>
 			<label>Site
-				<input type="url" name="site">
-			</label><br><br>	
+				<input type="url" name="site"/>
+			</label><br/><br/>	
 			<label>Email
-				<input type="email" name="email">
-			</label><br><br>
+				<input type="email" name="email"/>
+			</label><br/><br/>
 			<label>Phone
-				<input type="tel" name="phone">
-			</label><br><br>
-		</fieldset><br>
+				<input type="tel" name="phone"/>
+			</label><br/><br/>
+		</fieldset><br/>
 		<label>Password
-				<input type="password" name="password" required>
-		</label><br><br>
-		<input type="submit" name="submit">
-		<input type="reset" name="reset">
+				<input type="password" name="password" required/>
+		</label><br/><br/>
+		<input type="submit" name="submit"/>
+		<input type="reset" name="reset"/>
 	</form>
 	</body>
 </html>
