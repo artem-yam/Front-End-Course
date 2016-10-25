@@ -1,0 +1,298 @@
+h1{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+section{
+  margin-left: 10px;
+}
+
+#task1 .container{
+  background-color: #a0dfd1;
+  padding: 10px;
+  width: 95%;
+  border-radius: 10px;
+}
+
+#task1 .top{
+  position:relative;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #ffcf00;
+  height:40px;
+}
+
+#task1 .top:after{
+	content:"";
+	border: 15px solid transparent;
+	border-top: 15px solid #ffcf00;
+	position: relative;
+	top: 40px;
+	left: -50px; 
+}
+
+#task1 .text{
+  position: relative;
+  border-top: 3px solid #ffcf00;
+  margin-top: -25px;
+  padding: 10px;
+  background-color: #edecde;
+}
+
+#task2 .arrow-box{
+	background-color: #88b7d5;
+	color: white;
+	width: 350px;
+	padding: 10px;
+	border: 5px solid #c2e1f5;
+}
+
+#task2 .arrow-box:before{
+	content: ''; 
+	position: absolute;
+    border: 20px solid transparent;
+	border-bottom: 20px solid #88b7d5;
+	margin-top: -50px;
+	margin-left: 150px;
+	z-index: 10;
+}
+
+#task2 .arrow-box:after{
+	content: ''; 
+	position: absolute;
+    border: 26px solid transparent;
+	border-bottom: 26px solid #c2e1f5;
+	margin-top: -117px;
+	margin-left: -164.3px;
+	z-index: 9;
+}
+
+#task3 h1{
+	margin-bottom: 40px;
+}
+
+#task3 .caption{
+	background-color: #a68bdd;
+	width: 70px;
+	padding: 5px;
+	text-align: center;
+	border: 3px solid #9081ce;
+	border-radius: 10px 10px 0 0;
+	z-index: 5;
+	position: absolute;
+	margin-top: -30px;
+	box-shadow: 0px 0px 10px 5px #a68bdd;
+}
+
+
+#task3 .text{
+	z-index: 1;
+	height: 250px;
+	padding: 10px;
+	width: 500px;
+	background-color: #a68bdd;
+	border: 3px solid #ada7bb;
+	border-radius: 0 10px 10px 10px;
+	box-shadow: 0px 0px 10px 5px #a68bdd;
+}
+
+#task4 .menu_item{
+	width: 100px;
+	text-align: center;
+	padding: 10px 0px;
+	background-color:#55f5ff; 
+}
+
+#task4 .menu_item:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 15px 5px #55f5ff;
+	background-color:#25c5cf;
+}
+
+#task4 label{
+	cursor: pointer;
+}
+
+#task4 #topmenu{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top: 1px solid #a5f5ff;
+}
+
+#task4 .menu_item:not(#topmenu),input{
+	display: none;
+}
+
+#task4 input:checked ~ .menu_item:not(#topmenu){
+	display: block;	
+}
+
+ #top_menu{
+	 width: 100%;
+	 padding: 0;
+	 background-color: #004076;
+	 height: 40px;
+	 color: white;
+	 min-width: 600px;
+ }
+ 
+ #top_menu div{
+	 cursor: pointer;
+ }
+ #top_menu .left{
+	 float: left;
+ }
+ 
+ #top_menu .right{
+	 float: right;
+ }
+ 
+ #top_menu .menu:hover{
+	 background-color:#e03838;
+ }
+ 
+ .count{
+	 float: right;
+	 padding-left: 3px;
+	 padding-right: 3px;
+	 border-radius: 50px;
+	 background-color: #f3272a;
+	 height: 20px;
+	 margin-top: 10px;
+	 margin-left:5px;
+ }
+ 
+ .menu{
+	 height: 40px;
+	 margin-right: 2px;
+	 float: left;
+	 background-color: #397cb3;
+	 padding-right: 10px;
+	 padding-left: 10px;
+ } 
+ .exit{
+	 background-color: #2f2f35;
+	 margin-right: 0;
+ }
+
+  #task5 img{
+	 width:24px;
+	 height:24px;
+ }
+ 
+ .mail_pic{
+	 height: 30px;
+	 width: 25px;
+	 margin-top: 7px;
+	 float: left;
+ }
+
+  .page_pic{
+	 height: 25px;
+	 width: 25px;
+	 margin-top: 7px;
+	 float: left;
+ }  
+ 
+ .user_pic{
+	 height: 25px;
+	 width: 19px;
+	 margin-top: 7px;
+	 float: left;
+ }
+ 
+  .flag_pic{
+	 height: 25px;
+	 width: 25px;
+	 margin-top: 7px;
+	 float: left;
+ }
+ 
+   .checked_pic{
+	 height: 25px;
+	 width: 25px;
+	 margin-top: 7px;
+	 float: left;
+ }
+ 
+ .refresh_pic{
+	 height: 25px;
+	 width: 25px;
+	 margin-top: 7px;
+	 float: left;
+ }
+ 
+ .widget_pic{
+	 height: 25px;
+	 width: 25px;
+	 margin-top: 7px;
+	 float: left;
+ }
+ 
+ .exit p{
+	 font-size: 20px;
+	 margin-top: 7px;
+	 margin-right: 5px;
+	 padding:0px 15px;
+	 float: left;
+ }
+ 
+  .exit_pic{
+	 height: 25px;
+	 width: 25px;
+	 margin-top: 7px;
+	 float: right;
+ }
+ 
+
+
+#task6 img{
+	height: 150px;
+	width: 155px;
+}
+
+.element_container{
+	margin-top: 25px;	
+	margin-left: 25px;
+}
+
+.buttons_container{
+	margin-left: 12px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#task6 > div{
+	width: 100%;
+	clear: both;
+}
+
+.float_container:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.block_container h2{
+	padding-top: 50px;
+}
+ 
+.float_container .element_container{
+	float: left;
+}
+
+.inline_container .element_container{
+	display: inline-block;
+}
+
+.flex_container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+
