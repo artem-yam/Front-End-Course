@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <title>CSS LAYOUT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+			<div class="header_links">
+				<a href="#">Help Center</a>
+				<span> &bull; </span>
+				<a href="#">Our Support</a>
+			</div> 
+            <div class="header_user-profile">
+				<a href="#">John Doe</a>
+			</div>
+    </header>
+    
+    <aside class="aside">
+            <div class="menu">
+                <a id="add_book" href="#">
+                    <span>&#10010;</span>
+                    ADD A BOOK
+                </a>
+            </div>
+
+            <div class="menu nav_menu">
+                <a href="#">
+                    <div class="reading"></div>
+                    Now Reading
+                </a>
+                <a href="#" class="active">
+                    <div class="browse"></div>
+                    Browse
+                </a>
+                <a href="#">
+                    <div class="buy_books"></div>
+                    Buy Books
+                </a>
+                <a href="#">
+                    <div class="fav_books"></div>
+                    Favourite Books
+                </a>
+                <a href="#">
+                    <div class="wishlist"></div>
+                    Wishlist
+                </a>
+                <a href="#">
+                    <div class="history"></div>
+                    History
+                </a>    
+            </div>
+
+            <div class="menu topics_menu">
+                <ul>
+                    <li class="red">
+                        <a href="#">
+                            Must Read Titles
+                        </a>
+                    </li>
+                    <li class="orange">
+                        <a href="#">
+                            Best Of List
+                        </a>
+                    </li>
+                    <li class="blue">
+                        <a href="#">
+                            Classic Novels
+                        </a>
+                    </li>
+                    <li class="purple">
+                        <a href="#">
+                            Non Fiction
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu history_block">
+                <div class="history_log">
+                    <div class="history_pic">
+                    </div>
+                    <div class="history_text">
+                        <p>You added <b>Fight Club</b>
+                           by <b>Chuck Palahniuk</b> to 
+                           your <b>Must Read Titles</b>
+                        </p>
+                        <span>24 minutes ago</span>
+                    </div>
+                </div>
+                 <div class="history_log">
+                    <div class="history_pic">
+                    </div>
+                    <div class="history_text">
+                        <p>You added <b>The Trial</b>
+                        by <b>Franz Kafka</b> to your
+                        <b>Must Read Titles</b>
+                        </p>
+                        <span>48 minutes ago</span>
+                    </div>
+                </div>
+            </div>
+    </aside>
+
+    <main class="main">
+        <div class="main_header">
+                Browse Available Books
+        </div>
+        <div class="main_sort">
+                <div class="sort">
+                    <div class="active">
+                        <a href="#">All Books</a>
+                    </div>
+                    <div>
+                        <a href="#">Most Recent</a>
+                    </div>
+                    <div>
+                        <a href="#">Most Popular</a>
+                    </div>
+                    <div>
+                        <a href="#">Free Books</a>
+                    </div>
+                </div>
+                <div class="keywords">
+                    <form method="get">
+                        <input type="search"
+                        placeholder="Enter Keywords"/>
+                        <input type="image" alt="Search"
+                        src="images/icons/search.png">
+                     </form>
+                </div>
+        </div>
+        <div class="main_content">
+            <div class="book">
+                <img src="images/JewelsOfNizam.jpg"
+                alt="Jewels of Nizam"/>
+                <div class="book_description">
+                     <span>Jewels of Nizam</span>
+                     by Geeta Devi
+                </div>
+                <div class="rating">
+                        <input id="star-4" type="radio" name="rating_stars-1"/>
+                        <label title="gorgeous" for="star-4"></label>
+
+                        <input id="star-3" type="radio" name="rating_stars-1"/>
+                        <label title="good" for="star-3"></label>
+
+                        <input id="star-2" type="radio" name="rating_stars-1"/>
+                        <label title="regular" for="star-2"></label>
+
+                        <input id="star-1" type="radio" name="rating_stars-1"/>
+                        <label title="poor" for="star-1"></label>
+
+                        <input id="star-0" type="radio" name="rating_stars-1"/>
+                        <label title="bad" for="star-0"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/CakesAndBakes.jpg"
+                alt="Cakes & Bakes"/>
+                <div class="book_description">
+                    <span>Cakes & Bakes</span>
+                    by Sanjeev Kapoor
+                </div>
+                <div class="rating">
+                        <input id="star-9" type="radio" name="rating_stars-2"/>
+                        <label title="gorgeous" for="star-9"></label>
+
+                        <input id="star-8" type="radio" name="rating_stars-2"/>
+                        <label title="good" for="star-8"></label>
+
+                        <input id="star-7" type="radio" name="rating_stars-2"/>
+                        <label title="regular" for="star-7"></label>
+
+                        <input id="star-6" type="radio" name="rating_stars-2"/>
+                        <label title="poor" for="star-6"></label>
+
+                        <input id="star-5" type="radio" name="rating_stars-2"/>
+                        <label title="bad" for="star-5"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/JamiesKitchen.jpg"
+                alt="Jamie's Kitchen"/>
+                <div class="book_description">
+                    <span>Jamie's Kitchen</span>
+                    by Jamie Oliver
+                </div>
+                <div class="rating">
+                        <input id="star-14" type="radio" name="rating_stars-3"/>
+                        <label title="gorgeous" for="star-14"></label>
+
+                        <input id="star-13" type="radio" name="rating_stars-3"/>
+                        <label title="good" for="star-13"></label>
+
+                        <input id="star-12" type="radio" name="rating_stars-3"/>
+                        <label title="regular" for="star-12"></label>
+
+                        <input id="star-11" type="radio" name="rating_stars-3"/>
+                        <label title="poor" for="star-11"></label>
+
+                        <input id="star-10" type="radio" name="rating_stars-3"/>
+                        <label title="bad" for="star-10"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/InexpensiveFamilyMeals.jpg"
+                alt="Inexpensive Family Meals"/>
+                <div class="book_description">
+                    <span>Inexpensive Family Meals</span>
+                    by Simon Holst
+                </div>
+                <div class="rating">
+                        <input id="star-19" type="radio" name="rating_stars-4"/>
+                        <label title="gorgeous" for="star-19"></label>
+
+                        <input id="star-18" type="radio" name="rating_stars-4"/>
+                        <label title="good" for="star-18"></label>
+
+                        <input id="star-17" type="radio" name="rating_stars-4"/>
+                        <label title="regular" for="star-17"></label>
+
+                        <input id="star-16" type="radio" name="rating_stars-4"/>
+                        <label title="poor" for="star-16"></label>
+
+                        <input id="star-15" type="radio" name="rating_stars-4"/>
+                        <label title="bad" for="star-15"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/PaleoSlowCooking.jpg"
+                alt="Paleo Slow Cooking"/>
+                <div class="book_description">
+                    <span>Paleo Slow Cooking</span>
+                    by Chrissy Gower
+                </div>
+                <div class="rating">
+                        <input id="star-24" type="radio" name="rating_stars-5"/>
+                        <label title="gorgeous" for="star-24"></label>
+
+                        <input id="star-23" type="radio" name="rating_stars-5"/>
+                        <label title="good" for="star-23"></label>
+
+                        <input id="star-22" type="radio" name="rating_stars-5"/>
+                        <label title="regular" for="star-22"></label>
+
+                        <input id="star-21" type="radio" name="rating_stars-5"/>
+                        <label title="poor" for="star-21"></label>
+
+                        <input id="star-20" type="radio" name="rating_stars-5"/>
+                        <label title="bad" for="star-20"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/CookLikeAnItalian.jpg"
+                alt="Cook Like An Italian"/>
+                <div class="book_description">
+                    <span>Cook Like An Italian</span>
+                    by Tobie Puttock
+                </div>
+                <div class="rating">
+                        <input id="star-29" type="radio" name="rating_stars-6"/>
+                        <label title="gorgeous" for="star-29"></label>
+
+                        <input id="star-28" type="radio" name="rating_stars-6"/>
+                        <label title="good" for="star-28"></label>
+
+                        <input id="star-27" type="radio" name="rating_stars-6"/>
+                        <label title="regular" for="star-27"></label>
+
+                        <input id="star-26" type="radio" name="rating_stars-6"/>
+                        <label title="poor" for="star-26"></label>
+
+                        <input id="star-25" type="radio" name="rating_stars-6"/>
+                        <label title="bad" for="star-25"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/SuneetaVaswani.jpg"
+                alt="Suneeta Vaswani"/>
+                <div class="book_description">
+                    <span>Suneeta Vaswani</span>
+                    by Geeta Devi
+                </div>
+                <div class="rating">
+                        <input id="star-34" type="radio" name="rating_stars-7"/>
+                        <label title="gorgeous" for="star-34"></label>
+
+                        <input id="star-33" type="radio" name="rating_stars-7"/>
+                        <label title="good" for="star-33"></label>
+
+                        <input id="star-32" type="radio" name="rating_stars-7"/>
+                        <label title="regular" for="star-32"></label>
+
+                        <input id="star-31" type="radio" name="rating_stars-7"/>
+                        <label title="poor" for="star-31"></label>
+
+                        <input id="star-30" type="radio" name="rating_stars-7"/>
+                        <label title="bad" for="star-30"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/JamieDoes.jpg"
+                alt="Jamie Does"/>
+                <div class="book_description">
+                    <span>Jamie Does</span>
+                    by Jamie Oliver
+                </div>
+                <div class="rating">
+                        <input id="star-39" type="radio" name="rating_stars-8"/>
+                        <label title="gorgeous" for="star-39"></label>
+
+                        <input id="star-38" type="radio" name="rating_stars-8"/>
+                        <label title="good" for="star-38"></label>
+
+                        <input id="star-37" type="radio" name="rating_stars-8"/>
+                        <label title="regular" for="star-37"></label>
+
+                        <input id="star-36" type="radio" name="rating_stars-8"/>
+                        <label title="poor" for="star-36"></label>
+
+                        <input id="star-35" type="radio" name="rating_stars-8"/>
+                        <label title="bad" for="star-35"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/JamiesItaly.jpg"
+                alt="Jamie's Italy"/>
+                <div class="book_description">
+                    <span>Jamie's Italy</span>
+                    by Jamie Oliver
+                </div>
+                <div class="rating">
+                        <input id="star-44" type="radio" name="rating_stars-9"/>
+                        <label title="gorgeous" for="star-44"></label>
+
+                        <input id="star-43" type="radio" name="rating_stars-9"/>
+                        <label title="good" for="star-43"></label>
+
+                        <input id="star-42" type="radio" name="rating_stars-9"/>
+                        <label title="regular" for="star-42"></label>
+
+                        <input id="star-41" type="radio" name="rating_stars-9"/>
+                        <label title="poor" for="star-41"></label>
+
+                        <input id="star-40" type="radio" name="rating_stars-9"/>
+                        <label title="bad" for="star-40"></label>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/VegetablesCookbook.jpg"
+                alt="Vegetables Cookbook"/>
+                <div class="book_description">
+                    <span>Vegetables Cookbook</span>
+                    by Matthew Biggs
+                </div>
+                <div class="rating">
+                        <input id="star-49" type="radio" name="rating_stars-10"/>
+                        <label title="gorgeous" for="star-49"></label>
+
+                        <input id="star-48" type="radio" name="rating_stars-10"/>
+                        <label title="good" for="star-48"></label>
+
+                        <input id="star-47" type="radio" name="rating_stars-10"/>
+                        <label title="regular" for="star-47"></label>
+
+                        <input id="star-46" type="radio" name="rating_stars-10"/>
+                        <label title="poor" for="star-46"></label>
+
+                        <input id="star-45" type="radio" name="rating_stars-10"/>
+                        <label title="bad" for="star-45"></label>
+                </div>
+            </div>
+        </div>
+    </main>
+  
+    <footer class="footer">
+        <a id="help" href="#">
+            <div></div>
+        </a>
+        <a id="settings" href="#">
+            <div></div>
+        </a>
+    </footer>
+</body>
+</html>
