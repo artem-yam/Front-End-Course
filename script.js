@@ -2,54 +2,72 @@
 //Задание 1
 document.write("<h4>Задание 1</h4>");
 var a = "Hello ", b = "World";
-document.write("<p>1 var = "+a+"; 2 var = "+b+"</p>");
+document.write("<p>1 var = " + a + "; 2 var = " + b + "</p>");
 
 //Задание 2
 
 document.write("<h4>Задание 2</h4>");
-function S_tr(a,h) {
-    document.write("<p>Площадь треугольника (сторона = " + a
-    + ", высота = " + h + ") : " + (1/2*a*h)+"</p>")
+function calculateTriangleSquare(a, h) {
+    return 1 / 2 * a * h;
 }
-S_tr(2,2);
 
+document.write("<p>Площадь треугольника (сторона = " + 2
+    + ", высота = " + 2 + ") : " + calculateTriangleSquare(2, 2) + "</p>");
 //Задание 3
 
 document.write("<h4>Задание 3</h4>");
-var arr = [1,2,3];
-function Reverse_array(array) {
+var arr = [1, 2, 3];
+function reverseArrayDoWhile(array) {
     var i = 0,
-        arr1=[], 
-        arr2=[], 
-        arr3=[];
-    document.write("Исходный массив = "+array+"<br>");
+        arr1 = [];
+
     do {
-        arr1[i]=array[array.length-1-i];
+        arr1[i] = array[array.length - 1 - i];
         i++;
-    }   while (i<array.length);
-    i=0;
-    while (i<array.length) {
-        arr2[i]=array[array.length-1-i];
-        i++;
-    } 
-    for(i=0;i<array.length;i++) {
-        arr3[i]=array[array.length-1-i];
-    }
-    document.write("Перевернутые массивы : <br>");
-    document.write("Массив 1 = "+arr1+"<br>");
-    document.write("Массив 2 = "+arr2+"<br>");
-    document.write("Массив 3 = "+arr3+"<br>");
+    } while (i < array.length);
+
+    return arr1;
 }
-Reverse_array(arr);
+
+function reverseArrayWhile(array) {
+    var i = 0,
+        arr1 = [];
+
+    while (i < array.length) {
+        arr1[i] = array[array.length - 1 - i];
+        i++;
+    }
+
+    return arr1;
+}
+
+function reverseArrayFor(array) {
+    var i = 0,
+        arr1 = [];
+
+    for (i = 0; i < array.length; i++) {
+        arr1[i] = array[array.length - 1 - i];
+    }
+
+    return arr1;
+}
+
+document.write("Исходный массив = " + arr + "<br>");
+document.write("Перевернутый массив 1 = " + reverseArrayDoWhile(arr) + "<br>");
+document.write("Перевернутый массив 2 = " + reverseArrayWhile(arr) + "<br>");
+document.write("Перевернутый массив 3 = " + reverseArrayFor(arr) + "<br>");
 
 //Задание 4
 
 document.write("<h4>Задание 4</h4>");
-var i=0,
-    j=0;
+
+var i = 0,
+    j = 0;
+
 document.write("++i " + "&nbsp; i++" + "<br>");
-while ((i<3) && (j<3)) {
-    document.write("&nbsp;&nbsp;&nbsp;"+ ++i + "&nbsp;&nbsp; ");
+
+while ((i < 3) && (j < 3)) {
+    document.write("&nbsp;&nbsp;&nbsp;" + ++i + "&nbsp;&nbsp; ");
     document.write(j++ + "<br>");
 }
 
@@ -57,20 +75,27 @@ while ((i<3) && (j<3)) {
 
 document.write("<h4>Задание 5</h4>");
 function number(arg) {
-    if (arg>0) document.write("Число " + arg + " - положительное<br>")
-    else if (arg ==0) document.write("Число " + arg + " - нулевое<br>")
-    else document.write("Число " + arg + " - отрицательное<br>")
+    var str;
+
+    if (arg > 0) {
+        return str = "положительное";
+    } else if (arg == 0) {
+        return str = "нулевое";
+    } else {
+        return str = "отрицательное";
+    }
 }
-number(2); 
-number(0); 
-number(-5);
+
+document.write("Число 2 - " + number(2) + "<br>");
+document.write("Число 0 - " + number(0) + "<br>");
+document.write("Число -5 - " + number(-5) + "<br>");
 
 //Задание 6
 
 document.write("<h4>Задание 6</h4>");
 var name = prompt("Как тебя зовут?", "Введите своё имя");
-alert('Привет, ' + name); 
-document.write("Введено имя : " + name);   
+alert('Привет, ' + name);
+document.write("Введено имя : " + name);
 
 
 //Задание 7
@@ -78,11 +103,12 @@ document.write("Введено имя : " + name);
 document.write("<h4>Задание 7</h4>");
 function factorial(num) {
     var fact = 1;
-    for (var i=1;i<=num;i++) {
+
+    for (var i = 1; i <= num; i++) {
         fact *= i;
     }
-    document.write("Факториал числа " + num +" = "+ fact + "<br>");
+
+    return fact;
 }
-factorial(3);
-        
-     
+
+document.write("Факториал числа 3 = " + factorial(3) + "<br>");
