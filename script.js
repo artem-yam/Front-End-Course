@@ -6,15 +6,14 @@ var Calculator = (function () {
 
   var result = 0;
 
-   function isNumber(value) {
+  function isNumber(value) {
     return !isNaN(parseFloat(value)) && isFinite(value);
   }
 
   function add(value) {
     if (!isNumber(value)) {
-        console.log('Введенное значение - не число');
-    }
-    else {
+      throw new Error('Введенное значение - не число');
+    } else {
       this.result += value;
       return this;
     }
@@ -22,19 +21,19 @@ var Calculator = (function () {
 
   function subtract(value) {
     if (!isNumber(value)) {
-        console.log('Введенное значение - не число');
-    }
-    else {
+      throw new Error('Введенное значение - не число');
+    } else {
       this.result -= value;
       return this;
-    } 
+    }
   }
 
   function divide(value) {
     if (!isNumber(value)) {
-        console.log('Введенное значение - не число');
-    }
-    else {
+      throw new Error('Введенное значение - не число');
+    } else if (value == 0) {
+      throw new Error('Деление на 0 невозможно');
+    } else {
       this.result /= value;
       return this;
     }
@@ -42,9 +41,8 @@ var Calculator = (function () {
 
   function multiply(value) {
     if (!isNumber(value)) {
-        console.log('Введенное значение - не число');
-    }
-    else {
+      throw new Error('Введенное значение - не число');
+    } else {
       this.result *= value;
       return this;
     }
@@ -58,18 +56,15 @@ var Calculator = (function () {
     this.result = 0;
     return this;
   }
-
+  
   function getInitialState() {
+    var _this = this;
+
     setTimeout(function () {
-        callback();
+      _this.result = 5;
+      _this.getResult();
     }, 500);
   }
-
-  function callback() {
-      console.info('Connected to server');
-      Calculator.result = 5;
-  }
-
 
   return {
     result: result,
