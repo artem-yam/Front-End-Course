@@ -1,18 +1,17 @@
-﻿
-console.info('Calculator');
-var Calculator = (function () {
+﻿var Calculator = (function () {
     'use strict';
 
     var result = 0;
+    var a = 2;
+
     function isNumber(value) {
         return !isNaN(parseFloat(value)) && isFinite(value);
     }
 
     function add(value) {
         if (!isNumber(value)) {
-            console.log('Введенное значение - не число');
-        } 
-        else {
+            throw new Error('Введенное значение - не число');
+        } else {
             result += value;
             return add;
         }
@@ -20,9 +19,8 @@ var Calculator = (function () {
 
     function subtract(value) {
         if (!isNumber(value)) {
-            console.log('Введенное значение - не число');
-        }
-        else {
+            throw new Error('Введенное значение - не число');
+        } else {
             result -= value;
             return subtract;
         }
@@ -30,12 +28,10 @@ var Calculator = (function () {
 
     function divide(value) {
         if (!isNumber(value)) {
-            console.log('Введенное значение - не число');
-        }
-        else if (value == 0) {
-            console.log('Деление на 0 невозможно');
-        }
-        else {
+            throw new Error('Введенное значение - не число');
+        } else if (value == 0) {
+            throw new Error('Деление на 0 невозможно');
+        } else {
             result /= value;
             return divide;
         }
@@ -43,9 +39,8 @@ var Calculator = (function () {
 
     function multiply(value) {
         if (!isNumber(value)) {
-            console.log('Введенное значение - не число');
-        }
-        else {
+            throw new Error('Введенное значение - не число');
+        } else {
             result *= value;
             return multiply;
         }
@@ -60,14 +55,13 @@ var Calculator = (function () {
     }
 
     return {
-        isNumber: isNumber,
         add: add,
         subtract: subtract,
         divide: divide,
         multiply: multiply,
         getResult: getResult,
         reset: reset
-  };
+    };
 
 } ());
 
@@ -79,8 +73,8 @@ Calculator.multiply(2);
 console.log(Calculator.getResult()) // 6
 Calculator.divide(3);
 console.log(Calculator.getResult()) // 2
-Calculator.divide(0);
-Calculator.reset();                 
+//Calculator.divide(0);
+Calculator.reset();
 console.log(Calculator.getResult()) // 0
-Calculator.add(4)(1) 
+Calculator.add(4)(1)
 console.log(Calculator.getResult()) // 5
