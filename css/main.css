@@ -1,0 +1,30 @@
+body{
+    font-family: Monotype Corsiva;
+    font-size: 2em;
+}
+section{
+    text-align: left;
+}
+
+.input-group{
+    margin-bottom: 25px;
+}
+
+section .panel-body{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#listItems {
+    border: 3px dotted lightslategrey;
+    padding-left: 50px; 
+}
+
+.input-group input{
+    height:35px;
+    font-size: inherit;
+}
+
+.input-group button{
+        font-size: 15px;
+}
